@@ -1,0 +1,265 @@
+@font-face {
+    font-family: "Inter";
+    src: url("/Inter/static/Inter_18pt-Regular.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 34px 135px;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+}
+
+.logo img {
+    width: 135px;
+    height: auto;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 850px;
+    height: 24px;
+    margin-top: 3px;
+    gap: 23px;
+    padding: 0px 135px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #0e0d0d;
+    font-weight: 500;
+    padding: 10px;
+    font-size: 19px;
+    transition: color 0.3s ease;
+}
+.actions {
+    font-size: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color: #0e0d0d;
+}
+
+.button {
+    background: none;
+    border: none;
+    color: black;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+}
+
+.actions a {
+    text-decoration: none;
+    color: #6987cd;
+    font-weight: 500;
+    padding: 10px;
+    font-size: 19px;
+}
+
+.store-container {
+    display: flex;
+    max-width: none;
+    max-height: 823px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.text-section {
+    position: relative;
+}
+
+.text-section h1 {
+    position: absolute;
+    top: 75px;
+    left: 119px;
+    font-family: inter, sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 90px;
+    letter-spacing: -4px;
+    color: #000;
+    margin: 0;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 90px;
+    letter-spacing: -4px;
+}
+
+h2 {
+    position: relative;
+    color: #1f2026;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.text-section h2 {
+    position: absolute;
+    font-size: 33px;
+    top: 430px;
+    left: 170px;
+    white-space: nowrap;
+}
+.details-btn {
+    font-family: "inter", sans-serif;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    white-space: nowrap;
+    gap: 15px;
+    position: absolute;
+    top: 525px;
+    left: 180px;
+}
+
+.details-btn::after {
+    content: "\2192"; 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+}
+
+.ratings {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.ratings span {
+    font-size: 1.2rem;
+    color: #ffa500;
+    margin-right: 10px;
+}
+
+.image-section {
+    display: inline-block;
+    position: relative;
+    margin-top: 135px;
+    margin-left: 700px;
+    width: 400px;
+    height: 440px;
+    border-radius: 30px;
+    overflow: visible;
+    background-image: url("/img/Rectangle\ 34624248.png");
+    background-size: cover;
+}
+
+.product-image {
+    display: block;
+    position: absolute;
+    top: -20px;
+    margin-left: 20px;
+    width: 413px;
+    height: auto;
+    z-index: 1;
+}
+
+.battery-info {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 50px;
+    padding: 15px 30px;
+    gap: 5px;
+    z-index: 2;
+}
+
+.icon-container {
+    background-color: #000;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.icon-container i {
+    color: #fff;
+    font-size: 20px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.battery-title {
+    margin: 0;
+    font-size: 16px;
+    color: #8a8a8a;
+    margin-bottom: 4px;
+}
+
+.battery-hours {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.warranty-info {
+    position: absolute;
+    top: 85px;
+    left: 255px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 50px;
+    padding: 15px 30px;
+    gap: 5px;
+    z-index: 2;
+    box-shadow: 0px 4px 10px rgba(47, 49, 46, 0.1);
+}
+
+.icon-container i {
+    color: #fff;
+    font-size: 20px;
+}
+
+.warranty-title {
+    margin: 0;
+    font-size: 16px;
+    color: #8a8a8a;
+    margin-bottom: 4px;
+}
+
+.warranty-period {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
